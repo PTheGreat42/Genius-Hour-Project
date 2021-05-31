@@ -45,8 +45,7 @@ Yo hey people
   start : function () {
     sw.timer = setInterval(sw.tick, 1000);
     sw.ego.value = "Stop";
-    sw.ego.removeEventListener("click", sw.start);
-    sw.ego.addEventListener("click", sw.stop);
+    sw.ego.removeEventListener("click", sw.start)
   },
 
   // (D) STOP
